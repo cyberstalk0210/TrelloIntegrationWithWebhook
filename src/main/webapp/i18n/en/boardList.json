@@ -1,0 +1,28 @@
+{
+  "trilloIntegrationApp": {
+    "boardList": {
+      "home": {
+        "title": "Board Lists",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Board List",
+        "createOrEditLabel": "Create or edit a Board List",
+        "notFound": "No Board Lists found"
+      },
+      "created": "A new Board List is created with identifier {{ param }}",
+      "updated": "A Board List is updated with identifier {{ param }}",
+      "deleted": "A Board List is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Board List {{ id }}?"
+      },
+      "detail": {
+        "title": "Board List"
+      },
+      "id": "ID",
+      "name": "Name",
+      "position": "Position",
+      "trelloId": "Trello Id",
+      "cards": "Cards",
+      "board": "Board"
+    }
+  }
+}

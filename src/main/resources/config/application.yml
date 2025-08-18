@@ -24,6 +24,11 @@ springdoc:
   api-docs:
     enabled: false
 ---
+trello:
+  api:
+    key: 43c4272c7720af7cb8e3a264dede9ecf
+    token: ATTAf4d2b56113b2d7e2ef1c8dc691991c954e2b1e96a7d2fc8ff40e63c13f78c23bFB3E3ABB
+
 management:
   endpoints:
     web:
@@ -92,7 +97,7 @@ management:
 
 spring:
   application:
-    name: trelloIntegration
+    name: TrilloIntegration
   docker:
     compose:
       enabled: true
@@ -152,13 +157,13 @@ spring:
           authorities-claim-name: auth
   task:
     execution:
-      thread-name-prefix: trello-integration-task-
+      thread-name-prefix: trillo-integration-task-
       pool:
         core-size: 2
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: trello-integration-scheduling-
+      thread-name-prefix: trillo-integration-scheduling-
       pool:
         size: 2
   thymeleaf:
@@ -189,7 +194,7 @@ info:
 
 jhipster:
   clientApp:
-    name: 'trelloIntegrationApp'
+    name: 'trilloIntegrationApp'
   # By default CORS is disabled. Uncomment to enable.
   # cors:
   #   allowed-origins: "http://localhost:8100,http://localhost:9000"
@@ -199,12 +204,12 @@ jhipster:
   #   allow-credentials: true
   #   max-age: 1800
   mail:
-    from: trelloIntegration@localhost
+    from: TrilloIntegration@localhost
   api-docs:
     default-include-pattern: /api/**
     management-include-pattern: /management/**
-    title: Trello Integration API
-    description: Trello Integration API documentation
+    title: Trillo Integration API
+    description: Trillo Integration API documentation
     version: 0.0.1
     terms-of-service-url:
     contact-name:

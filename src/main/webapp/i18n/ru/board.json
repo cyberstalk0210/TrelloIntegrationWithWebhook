@@ -1,0 +1,32 @@
+{
+  "trilloIntegrationApp": {
+    "board": {
+      "home": {
+        "title": "Boards",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Board",
+        "createOrEditLabel": "Создать или отредактировать Board",
+        "notFound": "Boards не найдено"
+      },
+      "created": "Новый Board создан с идентификатором {{ param }}",
+      "updated": "Board обновлен с идентификатором {{ param }}",
+      "deleted": "Board удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Board {{ id }}?"
+      },
+      "detail": {
+        "title": "Board"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description",
+      "visibility": "Visibility",
+      "trelloId": "Trello Id",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "lists": "Lists",
+      "cards": "Cards",
+      "workspace": "Workspace"
+    }
+  }
+}

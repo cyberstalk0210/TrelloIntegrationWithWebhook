@@ -1,0 +1,29 @@
+{
+  "trilloIntegrationApp": {
+    "trelloWebhook": {
+      "home": {
+        "title": "Trello Webhooks",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Trello Webhook",
+        "createOrEditLabel": "Создать или отредактировать Trello Webhook",
+        "notFound": "Trello Webhooks не найдено"
+      },
+      "created": "Новый Trello Webhook создан с идентификатором {{ param }}",
+      "updated": "Trello Webhook обновлен с идентификатором {{ param }}",
+      "deleted": "Trello Webhook удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Trello Webhook {{ id }}?"
+      },
+      "detail": {
+        "title": "Trello Webhook"
+      },
+      "id": "ID",
+      "trelloWebhookId": "Trello Webhook Id",
+      "idModel": "Id Model",
+      "callbackUrl": "Callback Url",
+      "active": "Active",
+      "lastReceivedAt": "Last Received At",
+      "secret": "Secret"
+    }
+  }
+}

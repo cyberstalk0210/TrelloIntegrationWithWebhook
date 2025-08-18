@@ -22,18 +22,18 @@ import tech.jhipster.config.JHipsterConstants;
 
 @SpringBootApplication(exclude = { H2ConsoleAutoConfiguration.class })
 @EnableConfigurationProperties({ LiquibaseProperties.class, ApplicationProperties.class })
-public class TrelloIntegrationApp {
+public class TrilloIntegrationApp {
 
-    private static final Logger LOG = LoggerFactory.getLogger(TrelloIntegrationApp.class);
+    private static final Logger LOG = LoggerFactory.getLogger(TrilloIntegrationApp.class);
 
     private final Environment env;
 
-    public TrelloIntegrationApp(Environment env) {
+    public TrilloIntegrationApp(Environment env) {
         this.env = env;
     }
 
     /**
-     * Initializes trelloIntegration.
+     * Initializes TrilloIntegration.
      * <p>
      * Spring profiles can be configured with a program argument --spring.profiles.active=your-active-profile
      * <p>
@@ -66,7 +66,7 @@ public class TrelloIntegrationApp {
      * @param args the command line arguments.
      */
     public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(TrelloIntegrationApp.class);
+        SpringApplication app = new SpringApplication(TrilloIntegrationApp.class);
         DefaultProfileUtil.addDefaultProfile(app);
         Environment env = app.run(args).getEnvironment();
         logApplicationStartup(env);

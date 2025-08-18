@@ -1,0 +1,38 @@
+{
+  "annotations": {
+    "changelogDate": "20250816134816"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "trelloWebhookId",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "idModel",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "callbackUrl",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "lastReceivedAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "secret",
+      "fieldType": "String"
+    }
+  ],
+  "name": "TrelloWebhook",
+  "relationships": [],
+  "searchEngine": "no"
+}

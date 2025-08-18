@@ -1,0 +1,27 @@
+{
+  "trilloIntegrationApp": {
+    "label": {
+      "home": {
+        "title": "Labels",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Label",
+        "createOrEditLabel": "Создать или отредактировать Label",
+        "notFound": "Labels не найдено"
+      },
+      "created": "Новый Label создан с идентификатором {{ param }}",
+      "updated": "Label обновлен с идентификатором {{ param }}",
+      "deleted": "Label удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Label {{ id }}?"
+      },
+      "detail": {
+        "title": "Label"
+      },
+      "id": "ID",
+      "name": "Name",
+      "color": "Color",
+      "trelloId": "Trello Id",
+      "cards": "Cards"
+    }
+  }
+}

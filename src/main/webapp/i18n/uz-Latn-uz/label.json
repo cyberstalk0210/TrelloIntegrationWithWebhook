@@ -1,0 +1,27 @@
+{
+  "trilloIntegrationApp": {
+    "label": {
+      "home": {
+        "title": "Labels",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Yangi Label qo`shish",
+        "createOrEditLabel": "Labelni tahrirlash",
+        "notFound": "No Labels found"
+      },
+      "created": "Label {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Label saqlandi",
+      "deleted": "{{ param }}- Label o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Labelni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Label"
+      },
+      "id": "ID",
+      "name": "Name",
+      "color": "Color",
+      "trelloId": "Trello Id",
+      "cards": "Cards"
+    }
+  }
+}

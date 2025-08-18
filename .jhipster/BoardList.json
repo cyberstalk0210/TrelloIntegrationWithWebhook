@@ -1,0 +1,42 @@
+{
+  "annotations": {
+    "changelogDate": "20250816134811"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "position",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "trelloId",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "BoardList",
+  "relationships": [
+    {
+      "otherEntityName": "card",
+      "otherEntityRelationshipName": "boardList",
+      "relationshipName": "cards",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "board",
+      "otherEntityRelationshipName": "lists",
+      "relationshipName": "board",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

@@ -1,8 +1,8 @@
 {
-  "name": "trello-integration",
+  "name": "trillo-integration",
   "version": "0.0.1-SNAPSHOT",
   "private": true,
-  "description": "Description for Trello Integration",
+  "description": "Description for Trillo Integration",
   "license": "UNLICENSED",
   "scripts": {
     "app:start": "./mvnw -ntp --batch-mode",

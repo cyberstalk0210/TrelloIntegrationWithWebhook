@@ -19,6 +19,7 @@ logging:
     tech.jhipster: DEBUG
     org.hibernate.SQL: DEBUG
     com.mycompany.myapp: DEBUG
+    javax.management.remote.rmi: ERROR
 
 spring:
   devtools:
@@ -37,8 +38,8 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:file:./target/h2db/db/trelloIntegration;DB_CLOSE_DELAY=-1
-    username: trelloIntegration
+    url: jdbc:h2:file:./target/h2db/db/TrilloIntegration;DB_CLOSE_DELAY=-1
+    username: TrilloIntegration
     password:
     hikari:
       poolName: Hikari

@@ -1,0 +1,36 @@
+{
+  "trilloIntegrationApp": {
+    "card": {
+      "home": {
+        "title": "Cards",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Card",
+        "createOrEditLabel": "Создать или отредактировать Card",
+        "notFound": "Cards не найдено"
+      },
+      "created": "Новый Card создан с идентификатором {{ param }}",
+      "updated": "Card обновлен с идентификатором {{ param }}",
+      "deleted": "Card удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Card {{ id }}?"
+      },
+      "detail": {
+        "title": "Card"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description",
+      "position": "Position",
+      "dueDate": "Due Date",
+      "isArchived": "Is Archived",
+      "trelloId": "Trello Id",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "comments": "Comments",
+      "attachments": "Attachments",
+      "labels": "Labels",
+      "board": "Board",
+      "boardList": "Board List"
+    }
+  }
+}

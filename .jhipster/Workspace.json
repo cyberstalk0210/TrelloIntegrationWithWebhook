@@ -1,0 +1,31 @@
+{
+  "annotations": {
+    "changelogDate": "20250816134809"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "trelloId",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "Workspace",
+  "relationships": [
+    {
+      "otherEntityName": "board",
+      "otherEntityRelationshipName": "workspace",
+      "relationshipName": "boards",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

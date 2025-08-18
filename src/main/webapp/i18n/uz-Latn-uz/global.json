@@ -1,13 +1,21 @@
 {
   "global": {
-    "title": "TrelloIntegration",
+    "title": "TrilloIntegration",
     "browsehappy": "Sizning brauzeringiz <strong>eski</strong>. Iltimos, <a href=\"http://browsehappy.com/?locale=ru\">yangilang</a>.",
     "menu": {
       "home": "Bosh sahifa",
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Ma`lumotlar",
-        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
+        "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)",
+        "workspace": "Workspace",
+        "board": "Board",
+        "boardList": "Board List",
+        "card": "Card",
+        "comment": "Comment",
+        "label": "Label",
+        "attachment": "Attachment",
+        "trelloWebhook": "Trello Webhook"
       },
       "account": {
         "main": "Profil",

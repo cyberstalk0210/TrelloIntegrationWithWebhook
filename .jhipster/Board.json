@@ -1,0 +1,65 @@
+{
+  "annotations": {
+    "changelogDate": "20250816134810"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "TextBlob"
+    },
+    {
+      "fieldName": "visibility",
+      "fieldType": "BoardVisibility",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "PRIVATE,PUBLIC,WORKSPACE"
+    },
+    {
+      "fieldName": "trelloId",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "Instant",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Board",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "boardList",
+      "otherEntityRelationshipName": "board",
+      "relationshipName": "lists",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "card",
+      "otherEntityRelationshipName": "board",
+      "relationshipName": "cards",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "workspace",
+      "otherEntityRelationshipName": "boards",
+      "relationshipName": "workspace",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

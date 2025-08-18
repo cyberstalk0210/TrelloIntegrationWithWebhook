@@ -1,0 +1,36 @@
+{
+  "trilloIntegrationApp": {
+    "card": {
+      "home": {
+        "title": "Cards",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Yangi Card qo`shish",
+        "createOrEditLabel": "Cardni tahrirlash",
+        "notFound": "No Cards found"
+      },
+      "created": "Card {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Card saqlandi",
+      "deleted": "{{ param }}- Card o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Cardni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Card"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description",
+      "position": "Position",
+      "dueDate": "Due Date",
+      "isArchived": "Is Archived",
+      "trelloId": "Trello Id",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "comments": "Comments",
+      "attachments": "Attachments",
+      "labels": "Labels",
+      "board": "Board",
+      "boardList": "Board List"
+    }
+  }
+}

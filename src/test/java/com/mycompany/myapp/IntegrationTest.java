@@ -14,7 +14,7 @@ import org.springframework.boot.test.context.SpringBootTest;
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@SpringBootTest(classes = { TrelloIntegrationApp.class, JacksonConfiguration.class, AsyncSyncConfiguration.class })
+@SpringBootTest(classes = { TrilloIntegrationApp.class, JacksonConfiguration.class, AsyncSyncConfiguration.class })
 @EmbeddedSQL
 public @interface IntegrationTest {
 }

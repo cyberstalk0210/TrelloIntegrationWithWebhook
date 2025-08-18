@@ -50,6 +50,22 @@ public class CacheConfiguration {
             createCache(cm, com.mycompany.myapp.domain.User.class.getName());
             createCache(cm, com.mycompany.myapp.domain.Authority.class.getName());
             createCache(cm, com.mycompany.myapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.mycompany.myapp.domain.Workspace.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Workspace.class.getName() + ".boards");
+            createCache(cm, com.mycompany.myapp.domain.Board.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Board.class.getName() + ".lists");
+            createCache(cm, com.mycompany.myapp.domain.Board.class.getName() + ".cards");
+            createCache(cm, com.mycompany.myapp.domain.BoardList.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.BoardList.class.getName() + ".cards");
+            createCache(cm, com.mycompany.myapp.domain.Card.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Card.class.getName() + ".comments");
+            createCache(cm, com.mycompany.myapp.domain.Card.class.getName() + ".attachments");
+            createCache(cm, com.mycompany.myapp.domain.Card.class.getName() + ".labels");
+            createCache(cm, com.mycompany.myapp.domain.Comment.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Label.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Label.class.getName() + ".cards");
+            createCache(cm, com.mycompany.myapp.domain.Attachment.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.TrelloWebhook.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

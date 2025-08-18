@@ -1,0 +1,43 @@
+{
+  "annotations": {
+    "changelogDate": "20250816134815"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "fileName",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "fileUrl",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "fileSize",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "uploadedAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "source",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Attachment",
+  "relationships": [
+    {
+      "otherEntityName": "card",
+      "otherEntityRelationshipName": "attachments",
+      "relationshipName": "card",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

@@ -1,0 +1,10 @@
+{
+  "trilloIntegrationApp": {
+    "BoardVisibility": {
+      "null": "",
+      "PRIVATE": "PRIVATE",
+      "PUBLIC": "PUBLIC",
+      "WORKSPACE": "WORKSPACE"
+    }
+  }
+}

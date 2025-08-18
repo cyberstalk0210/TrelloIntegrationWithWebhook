@@ -1,0 +1,27 @@
+{
+  "trilloIntegrationApp": {
+    "comment": {
+      "home": {
+        "title": "Comments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Yangi Comment qo`shish",
+        "createOrEditLabel": "Commentni tahrirlash",
+        "notFound": "No Comments found"
+      },
+      "created": "Comment {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Comment saqlandi",
+      "deleted": "{{ param }}- Comment o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Commentni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Comment"
+      },
+      "id": "ID",
+      "author": "Author",
+      "text": "Text",
+      "createdAt": "Created At",
+      "card": "Card"
+    }
+  }
+}

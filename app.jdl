@@ -1,0 +1,96 @@
+//application {
+//  config {
+//    baseName TrilloIntegration
+//    packageName com.mycompany.myapp
+//    applicationType monolith
+//    authenticationType jwt
+//    prodDatabaseType postgresql
+//    devDatabaseType h2Disk
+//    serviceDiscoveryType false
+//  }
+//}
+
+entity Workspace {
+  name String required,
+  trelloId String required
+}
+
+entity Board {
+  title String required,
+  description TextBlob,
+  visibility BoardVisibility required,
+  trelloId String required,
+  createdAt Instant required,
+  createdBy String
+}
+
+entity BoardList {
+  name String required,
+  position Integer,
+  trelloId String required
+}
+
+entity BoardMember{
+
+}
+
+entity Card {
+  title String required,
+  description TextBlob,
+  position Integer,
+  dueDate Instant,
+  isArchived Boolean,
+  trelloId String required,
+  createdAt Instant,
+  updatedAt Instant
+}
+
+entity Comment {
+  author String,
+  text TextBlob required,
+  createdAt Instant required
+}
+
+entity Label {
+  name String required,
+  color String,
+  trelloId String
+}
+
+entity Attachment {
+  fileName String required,
+  fileUrl String required,
+  fileSize Long,
+  uploadedAt Instant,
+  source String
+}
+
+entity TrelloWebhook {
+  trelloWebhookId String required,
+  idModel String required,
+  callbackUrl String required,
+  active Boolean,
+  lastReceivedAt Instant,
+  secret String
+}
+
+enum BoardVisibility {
+  PRIVATE, PUBLIC, WORKSPACE
+}
+
+relationship OneToMany {
+  Workspace{boards} to Board{workspace}
+  Board{lists} to BoardList{board}
+  Board{cards} to Card{board}
+  BoardList{cards} to Card{boardList}
+  Card{comments} to Comment{card}
+  Card{attachments} to Attachment{card}
+}
+
+relationship ManyToMany {
+  Card{labels} to Label{cards}
+}
+
+/* Extra options */
+dto Workspace,Board,BoardList,Card,Comment,Label,Attachment with mapstruct
+service Workspace,Board,BoardList,Card with serviceImpl

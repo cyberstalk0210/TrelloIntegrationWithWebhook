@@ -1,0 +1,32 @@
+{
+  "trilloIntegrationApp": {
+    "board": {
+      "home": {
+        "title": "Boards",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Yangi Board qo`shish",
+        "createOrEditLabel": "Boardni tahrirlash",
+        "notFound": "No Boards found"
+      },
+      "created": "Board {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Board saqlandi",
+      "deleted": "{{ param }}- Board o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Boardni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Board"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description",
+      "visibility": "Visibility",
+      "trelloId": "Trello Id",
+      "createdAt": "Created At",
+      "createdBy": "Created By",
+      "lists": "Lists",
+      "cards": "Cards",
+      "workspace": "Workspace"
+    }
+  }
+}

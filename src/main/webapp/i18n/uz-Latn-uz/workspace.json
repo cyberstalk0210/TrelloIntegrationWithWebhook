@@ -1,0 +1,26 @@
+{
+  "trilloIntegrationApp": {
+    "workspace": {
+      "home": {
+        "title": "Workspaces",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Yangi Workspace qo`shish",
+        "createOrEditLabel": "Workspaceni tahrirlash",
+        "notFound": "No Workspaces found"
+      },
+      "created": "Workspace {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Workspace saqlandi",
+      "deleted": "{{ param }}- Workspace o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Workspaceni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Workspace"
+      },
+      "id": "ID",
+      "name": "Name",
+      "trelloId": "Trello Id",
+      "boards": "Boards"
+    }
+  }
+}

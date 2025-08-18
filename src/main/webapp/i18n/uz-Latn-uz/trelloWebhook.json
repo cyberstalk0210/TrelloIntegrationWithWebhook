@@ -1,0 +1,29 @@
+{
+  "trilloIntegrationApp": {
+    "trelloWebhook": {
+      "home": {
+        "title": "Trello Webhooks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Yangi Trello Webhook qo`shish",
+        "createOrEditLabel": "Trello Webhookni tahrirlash",
+        "notFound": "No Trello Webhooks found"
+      },
+      "created": "Trello Webhook {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Trello Webhook saqlandi",
+      "deleted": "{{ param }}- Trello Webhook o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Trello Webhookni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Trello Webhook"
+      },
+      "id": "ID",
+      "trelloWebhookId": "Trello Webhook Id",
+      "idModel": "Id Model",
+      "callbackUrl": "Callback Url",
+      "active": "Active",
+      "lastReceivedAt": "Last Received At",
+      "secret": "Secret"
+    }
+  }
+}

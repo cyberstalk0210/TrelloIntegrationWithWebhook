@@ -1,0 +1,28 @@
+{
+  "trilloIntegrationApp": {
+    "boardList": {
+      "home": {
+        "title": "Board Lists",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Board List",
+        "createOrEditLabel": "Создать или отредактировать Board List",
+        "notFound": "Board Lists не найдено"
+      },
+      "created": "Новый Board List создан с идентификатором {{ param }}",
+      "updated": "Board List обновлен с идентификатором {{ param }}",
+      "deleted": "Board List удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Board List {{ id }}?"
+      },
+      "detail": {
+        "title": "Board List"
+      },
+      "id": "ID",
+      "name": "Name",
+      "position": "Position",
+      "trelloId": "Trello Id",
+      "cards": "Cards",
+      "board": "Board"
+    }
+  }
+}

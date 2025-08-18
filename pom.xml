@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mycompany.myapp</groupId>
-    <artifactId>trello-integration</artifactId>
+    <artifactId>trillo-integration</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>Trello Integration</name>
-    <description>Description for Trello Integration</description>
+    <name>Trillo Integration</name>
+    <description>Description for Trillo Integration</description>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -31,7 +31,7 @@
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <start-class>com.mycompany.myapp.TrelloIntegrationApp</start-class>
+        <start-class>com.mycompany.myapp.TrilloIntegrationApp</start-class>
         <argLine>-Djava.security.egd=file:/dev/./urandom -Xmx1G</argLine>
         <m2e.apt.activation>jdt_apt</m2e.apt.activation>
         <run.addResources>false</run.addResources>
@@ -97,6 +97,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-loader-tools</artifactId>
         </dependency>
+
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-webflux</artifactId>
+      </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -288,6 +294,16 @@
             <artifactId>testcontainers</artifactId>
             <scope>test</scope>
         </dependency>
+      <dependency>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <scope>runtime</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.testcontainers</groupId>
+        <artifactId>postgresql</artifactId>
+        <scope>test</scope>
+      </dependency>
     </dependencies>
 
     <build>
@@ -638,7 +654,7 @@
                             </platforms>
                         </from>
                         <to>
-                            <image>trellointegration:latest</image>
+                            <image>trillointegration:latest</image>
                         </to>
                         <container>
                             <entrypoint>
@@ -839,7 +855,7 @@
                                 <skipValidateSpec>false</skipValidateSpec>
                                 <configOptions>
                                     <delegatePattern>true</delegatePattern>
-                                    <title>trello-integration</title>
+                                    <title>trillo-integration</title>
                                     <useSpringBoot3>true</useSpringBoot3>
                                 </configOptions>
                             </configuration>
@@ -872,8 +888,8 @@
                 <liquibase-plugin.driver>org.h2.Driver</liquibase-plugin.driver>
                 <liquibase-plugin.hibernate-dialect>org.hibernate.dialect.H2Dialect</liquibase-plugin.hibernate-dialect>
                 <liquibase-plugin.password/>
-                <liquibase-plugin.url>jdbc:h2:file:${project.build.directory}/h2db/db/trelloIntegration</liquibase-plugin.url>
-                <liquibase-plugin.username>trelloIntegration</liquibase-plugin.username>
+                <liquibase-plugin.url>jdbc:h2:file:${project.build.directory}/h2db/db/TrilloIntegration</liquibase-plugin.url>
+                <liquibase-plugin.username>TrilloIntegration</liquibase-plugin.username>
                 <profile.test>test,testdev</profile.test>
                 <spring.profiles.active>dev${profile.tls}${profile.no-liquibase}</spring.profiles.active>
             </properties>
@@ -1025,8 +1041,8 @@
                 <liquibase-plugin.driver>org.postgresql.Driver</liquibase-plugin.driver>
                 <liquibase-plugin.hibernate-dialect>org.hibernate.dialect.PostgreSQLDialect</liquibase-plugin.hibernate-dialect>
                 <liquibase-plugin.password/>
-                <liquibase-plugin.url>jdbc:postgresql://localhost:5432/trelloIntegration</liquibase-plugin.url>
-                <liquibase-plugin.username>trelloIntegration</liquibase-plugin.username>
+                <liquibase-plugin.url>jdbc:postgresql://localhost:5432/TrilloIntegration</liquibase-plugin.url>
+                <liquibase-plugin.username>TrilloIntegration</liquibase-plugin.username>
                 <profile.test>test,testprod</profile.test>
                 <spring.profiles.active>prod${profile.api-docs}${profile.tls}${profile.e2e}${profile.no-liquibase}</spring.profiles.active>
             </properties>
