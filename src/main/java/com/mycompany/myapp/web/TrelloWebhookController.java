@@ -1,7 +1,7 @@
 package com.mycompany.myapp.web;
 
-import com.mycompany.myapp.ActionHandler.ActionHandler;
-import com.mycompany.myapp.ActionHandler.ActionHandlerFactory;
+import com.mycompany.myapp.actionHandler.ActionHandler;
+import com.mycompany.myapp.actionHandler.ActionHandlerFactory;
 import com.mycompany.myapp.service.TrelloService;
 import com.mycompany.myapp.service.WebhookPayload;
 import org.springframework.http.ResponseEntity;

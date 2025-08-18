@@ -1,4 +1,4 @@
-package com.mycompany.myapp.ActionHandler;
+package com.mycompany.myapp.actionHandler;
 
 import com.mycompany.myapp.service.WebhookPayload;
 
