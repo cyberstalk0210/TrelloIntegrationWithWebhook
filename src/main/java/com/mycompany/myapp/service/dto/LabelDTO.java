@@ -2,9 +2,7 @@ package com.mycompany.myapp.service.dto;
 
 import jakarta.validation.constraints.*;
 import java.io.Serializable;
-import java.util.HashSet;
 import java.util.Objects;
-import java.util.Set;
 
 /**
  * A DTO for the {@link com.mycompany.myapp.domain.Label} entity.
@@ -20,8 +18,6 @@ public class LabelDTO implements Serializable {
     private String color;
 
     private String trelloId;
-
-    private Set<CardDTO> cards = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -55,27 +51,12 @@ public class LabelDTO implements Serializable {
         this.trelloId = trelloId;
     }
 
-    public Set<CardDTO> getCards() {
-        return cards;
-    }
-
-    public void setCards(Set<CardDTO> cards) {
-        this.cards = cards;
-    }
-
     @Override
     public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (!(o instanceof LabelDTO)) {
-            return false;
-        }
-
+        if (this == o) return true;
+        if (!(o instanceof LabelDTO)) return false;
         LabelDTO labelDTO = (LabelDTO) o;
-        if (this.id == null) {
-            return false;
-        }
+        if (this.id == null) return false;
         return Objects.equals(this.id, labelDTO.id);
     }
 
@@ -84,15 +65,22 @@ public class LabelDTO implements Serializable {
         return Objects.hash(this.id);
     }
 
-    // prettier-ignore
     @Override
     public String toString() {
-        return "LabelDTO{" +
-            "id=" + getId() +
-            ", name='" + getName() + "'" +
-            ", color='" + getColor() + "'" +
-            ", trelloId='" + getTrelloId() + "'" +
-            ", cards=" + getCards() +
-            "}";
+        return (
+            "LabelDTO{" +
+            "id=" +
+            getId() +
+            ", name='" +
+            getName() +
+            "'" +
+            ", color='" +
+            getColor() +
+            "'" +
+            ", trelloId='" +
+            getTrelloId() +
+            "'" +
+            "}"
+        );
     }
 }

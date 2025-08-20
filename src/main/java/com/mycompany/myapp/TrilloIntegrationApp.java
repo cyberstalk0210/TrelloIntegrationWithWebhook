@@ -2,6 +2,7 @@ package com.mycompany.myapp;
 
 import com.mycompany.myapp.config.ApplicationProperties;
 import com.mycompany.myapp.config.CRLFLogConverter;
+import com.mycompany.myapp.service.TrelloService;
 import jakarta.annotation.PostConstruct;
 import java.net.InetAddress;
 import java.net.UnknownHostException;

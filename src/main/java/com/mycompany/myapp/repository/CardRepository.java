@@ -27,4 +27,6 @@ public interface CardRepository extends CardRepositoryWithBagRelationships, JpaR
     default Page<Card> findAllWithEagerRelationships(Pageable pageable) {
         return this.fetchBagRelationships(this.findAll(pageable));
     }
+
+    Optional<Card> findByTrelloId(String trelloId);
 }

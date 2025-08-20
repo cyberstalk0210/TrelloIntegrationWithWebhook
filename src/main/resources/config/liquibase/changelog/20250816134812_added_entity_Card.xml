@@ -26,6 +26,9 @@
             <column name="due_date" type="${datetimeType}">
                 <constraints nullable="true" />
             </column>
+          <column name="start_date" type="${datetimeType}">
+            <constraints nullable="true" />
+          </column>
             <column name="is_archived" type="boolean">
                 <constraints nullable="true" />
             </column>
@@ -44,6 +47,7 @@
             <column name="board_list_id" type="bigint">
                 <constraints nullable="true" />
             </column>
+
             <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
         </createTable>
         <dropDefaultValue tableName="card" columnName="due_date" columnDataType="${datetimeType}"/>

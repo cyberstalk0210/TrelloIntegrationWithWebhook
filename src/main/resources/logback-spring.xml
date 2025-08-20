@@ -79,4 +79,8 @@
         <resetJUL>true</resetJUL>
     </contextListener>
 
+  <encoder>
+    <pattern>%msg%n</pattern>
+  </encoder>
+
 </configuration>

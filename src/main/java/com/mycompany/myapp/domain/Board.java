@@ -66,7 +66,23 @@ public class Board implements Serializable {
     @JsonIgnoreProperties(value = { "boards" }, allowSetters = true)
     private Workspace workspace;
 
+    private String updatedBy;
+
+    public Instant getUpdatedAt() {
+        return updatedAt;
+    }
+
+    private Instant updatedAt;
+
     // jhipster-needle-entity-add-field - JHipster will add fields here
+
+    public String getUpdatedBy() {
+        return updatedBy;
+    }
+
+    public void setUpdatedBy(String updatedBy) {
+        this.updatedBy = updatedBy;
+    }
 
     public Long getId() {
         return this.id;
@@ -265,5 +281,9 @@ public class Board implements Serializable {
             ", createdAt='" + getCreatedAt() + "'" +
             ", createdBy='" + getCreatedBy() + "'" +
             "}";
+    }
+
+    public void setUpdatedAt(Instant now) {
+        this.updatedAt = now;
     }
 }

@@ -38,7 +38,7 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:file:./target/h2db/db/TrilloIntegration;DB_CLOSE_DELAY=-1
+    url: jdbc:h2:file:./target/h2db/db/TrelloIntegration;DB_CLOSE_DELAY=-1
     username: TrilloIntegration
     password:
     hikari:
@@ -51,6 +51,7 @@ spring:
   liquibase:
     # Remove 'faker' if you do not want the sample data to be loaded automatically
     contexts: dev, faker
+  #    drop-first: true
   mail:
     host: localhost
     port: 25

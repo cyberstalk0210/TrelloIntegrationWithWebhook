@@ -1,6 +1,7 @@
 package com.mycompany.myapp.repository;
 
 import com.mycompany.myapp.domain.Label;
+import java.util.Optional;
 import org.springframework.data.jpa.repository.*;
 import org.springframework.stereotype.Repository;
 
@@ -9,4 +10,6 @@ import org.springframework.stereotype.Repository;
  */
 @SuppressWarnings("unused")
 @Repository
-public interface LabelRepository extends JpaRepository<Label, Long> {}
+public interface LabelRepository extends JpaRepository<Label, Long> {
+    Optional<Label> findByTrelloId(String id);
+}

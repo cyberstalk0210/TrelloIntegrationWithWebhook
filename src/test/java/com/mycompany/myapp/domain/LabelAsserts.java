@@ -23,7 +23,7 @@ public class LabelAsserts {
      */
     public static void assertLabelAllUpdatablePropertiesEquals(Label expected, Label actual) {
         assertLabelUpdatableFieldsEquals(expected, actual);
-        assertLabelUpdatableRelationshipsEquals(expected, actual);
+        //        assertLabelUpdatableRelationshipsEquals(expected, actual);
     }
 
     /**
@@ -51,16 +51,15 @@ public class LabelAsserts {
             .satisfies(a -> assertThat(a.getColor()).as("check color").isEqualTo(expected.getColor()))
             .satisfies(a -> assertThat(a.getTrelloId()).as("check trelloId").isEqualTo(expected.getTrelloId()));
     }
-
     /**
      * Asserts that the entity has all the updatable relationships set.
      *
      * @param expected the expected entity
      * @param actual the actual entity
      */
-    public static void assertLabelUpdatableRelationshipsEquals(Label expected, Label actual) {
-        assertThat(actual)
-            .as("Verify Label relationships")
-            .satisfies(a -> assertThat(a.getCards()).as("check cards").isEqualTo(expected.getCards()));
-    }
+    //    public static void assertLabelUpdatableRelationshipsEquals(Label expected, Label actual) {
+    //        assertThat(actual)
+    //            .as("Verify Label relationships")
+    //            .satisfies(a -> assertThat(a.getCards()).as("check cards").isEqualTo(expected.getCards()));
+    //    }
 }

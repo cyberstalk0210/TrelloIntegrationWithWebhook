@@ -2,7 +2,7 @@ package com.mycompany.myapp.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.*;
+import jakarta.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.HashSet;
@@ -41,6 +41,9 @@ public class Card implements Serializable {
     @Column(name = "due_date")
     private Instant dueDate;
 
+    @Column(name = "start_date")
+    private Instant startDate;
+
     @Column(name = "is_archived")
     private Boolean isArchived;
 
@@ -64,10 +67,8 @@ public class Card implements Serializable {
     @JsonIgnoreProperties(value = { "card" }, allowSetters = true)
     private Set<Attachment> attachments = new HashSet<>();
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "rel_card__labels", joinColumns = @JoinColumn(name = "card_id"), inverseJoinColumns = @JoinColumn(name = "labels_id"))
-    @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
-    @JsonIgnoreProperties(value = { "cards" }, allowSetters = true)
     private Set<Label> labels = new HashSet<>();
 
     @ManyToOne(fetch = FetchType.LAZY)
@@ -79,6 +80,22 @@ public class Card implements Serializable {
     private BoardList boardList;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here
+
+    public Instant getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(Instant startDate) {
+        this.startDate = startDate;
+    }
+
+    public Boolean getArchived() {
+        return isArchived;
+    }
+
+    public void setArchived(Boolean archived) {
+        isArchived = archived;
+    }
 
     public Long getId() {
         return this.id;
