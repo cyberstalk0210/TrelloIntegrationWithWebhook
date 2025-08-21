@@ -39,8 +39,8 @@ public class Attachment implements Serializable {
     @Column(name = "uploaded_at")
     private Instant uploadedAt;
 
-    @Column(name = "source")
-    private String source;
+    @Column(name = "attachmentId")
+    private String attachmentId;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JsonIgnoreProperties(value = { "comments", "attachments", "labels", "board", "boardList" }, allowSetters = true)
@@ -113,17 +113,17 @@ public class Attachment implements Serializable {
         this.uploadedAt = uploadedAt;
     }
 
-    public String getSource() {
-        return this.source;
+    public String getAttachmentId() {
+        return this.attachmentId;
     }
 
     public Attachment source(String source) {
-        this.setSource(source);
+        this.setAttachmentId(source);
         return this;
     }
 
-    public void setSource(String source) {
-        this.source = source;
+    public void setAttachmentId(String source) {
+        this.attachmentId = source;
     }
 
     public Card getCard() {
@@ -167,7 +167,7 @@ public class Attachment implements Serializable {
             ", fileUrl='" + getFileUrl() + "'" +
             ", fileSize=" + getFileSize() +
             ", uploadedAt='" + getUploadedAt() + "'" +
-            ", source='" + getSource() + "'" +
+            ", source='" + getAttachmentId() + "'" +
             "}";
     }
 }

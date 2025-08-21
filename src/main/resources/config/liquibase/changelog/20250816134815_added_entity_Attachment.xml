@@ -26,7 +26,7 @@
             <column name="uploaded_at" type="${datetimeType}">
                 <constraints nullable="true" />
             </column>
-            <column name="source" type="varchar(255)">
+            <column name="attachment_id" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
             <column name="card_id" type="bigint">
@@ -58,7 +58,7 @@
             <column name="file_url" type="string"/>
             <column name="file_size" type="numeric"/>
             <column name="uploaded_at" type="date"/>
-            <column name="source" type="string"/>
+            <column name="attachment_id" type="string"/>
             <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
         </loadData>
     </changeSet>

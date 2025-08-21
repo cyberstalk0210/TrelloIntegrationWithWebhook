@@ -15,7 +15,11 @@
         "comment": "Comment",
         "label": "Label",
         "attachment": "Attachment",
-        "trelloWebhook": "Trello Webhook"
+        "trelloWebhook": "Trello Webhook",
+        "checkList": "Check List",
+        "checkItem": "Check Item",
+        "textData": "Text Data",
+        "emoji": "Emoji"
       },
       "account": {
         "main": "Account",

@@ -66,6 +66,12 @@ public class CacheConfiguration {
             createCache(cm, com.mycompany.myapp.domain.Label.class.getName() + ".cards");
             createCache(cm, com.mycompany.myapp.domain.Attachment.class.getName());
             createCache(cm, com.mycompany.myapp.domain.TrelloWebhook.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.CheckList.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.CheckList.class.getName() + ".checkItems");
+            createCache(cm, com.mycompany.myapp.domain.CheckItem.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.TextData.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.TextData.class.getName() + ".emojis");
+            createCache(cm, com.mycompany.myapp.domain.Emoji.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

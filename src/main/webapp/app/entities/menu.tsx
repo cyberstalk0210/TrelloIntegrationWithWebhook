@@ -31,6 +31,18 @@ const EntitiesMenu = () => {
       <MenuItem icon="asterisk" to="/trello-webhook">
         <Translate contentKey="global.menu.entities.trelloWebhook" />
       </MenuItem>
+      <MenuItem icon="asterisk" to="/check-list">
+        <Translate contentKey="global.menu.entities.checkList" />
+      </MenuItem>
+      <MenuItem icon="asterisk" to="/check-item">
+        <Translate contentKey="global.menu.entities.checkItem" />
+      </MenuItem>
+      <MenuItem icon="asterisk" to="/text-data">
+        <Translate contentKey="global.menu.entities.textData" />
+      </MenuItem>
+      <MenuItem icon="asterisk" to="/emoji">
+        <Translate contentKey="global.menu.entities.emoji" />
+      </MenuItem>
       {/* jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here */}
     </>
   );

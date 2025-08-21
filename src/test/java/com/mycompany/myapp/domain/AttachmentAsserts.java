@@ -51,7 +51,7 @@ public class AttachmentAsserts {
             .satisfies(a -> assertThat(a.getFileUrl()).as("check fileUrl").isEqualTo(expected.getFileUrl()))
             .satisfies(a -> assertThat(a.getFileSize()).as("check fileSize").isEqualTo(expected.getFileSize()))
             .satisfies(a -> assertThat(a.getUploadedAt()).as("check uploadedAt").isEqualTo(expected.getUploadedAt()))
-            .satisfies(a -> assertThat(a.getSource()).as("check source").isEqualTo(expected.getSource()));
+            .satisfies(a -> assertThat(a.getAttachmentId()).as("check source").isEqualTo(expected.getAttachmentId()));
     }
 
     /**

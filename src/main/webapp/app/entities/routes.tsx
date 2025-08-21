@@ -11,6 +11,10 @@ import Comment from './comment';
 import Label from './label';
 import Attachment from './attachment';
 import TrelloWebhook from './trello-webhook';
+import CheckList from './check-list';
+import CheckItem from './check-item';
+import TextData from './text-data';
+import Emoji from './emoji';
 /* jhipster-needle-add-route-import - JHipster will add routes here */
 
 export default () => {
@@ -26,6 +30,10 @@ export default () => {
         <Route path="label/*" element={<Label />} />
         <Route path="attachment/*" element={<Attachment />} />
         <Route path="trello-webhook/*" element={<TrelloWebhook />} />
+        <Route path="check-list/*" element={<CheckList />} />
+        <Route path="check-item/*" element={<CheckItem />} />
+        <Route path="text-data/*" element={<TextData />} />
+        <Route path="emoji/*" element={<Emoji />} />
         {/* jhipster-needle-add-route-path - JHipster will add routes here */}
       </ErrorBoundaryRoutes>
     </div>

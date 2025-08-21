@@ -1,0 +1,32 @@
+entity CheckList {
+  checkListId String,
+  name String
+}
+
+entity CheckItem {
+  checkItemId String,
+  name String,
+  state CheckItemState
+}
+
+entity TextData {
+  textDataId String
+}
+
+entity Emoji {
+  emojiId String,
+  name String
+}
+
+enum CheckItemState {
+  INCOMPLETE
+}
+
+relationship OneToMany {
+  CheckList{checkItem} to CheckItem{checkList}
+  TextData{emoji} to Emoji{textData}
+}
+
+relationship OneToOne {
+  CheckItem{data} to TextData{checkItem}
+}
