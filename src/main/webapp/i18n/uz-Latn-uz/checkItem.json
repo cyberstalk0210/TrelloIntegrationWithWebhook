@@ -1,0 +1,28 @@
+{
+  "trilloIntegrationApp": {
+    "checkItem": {
+      "home": {
+        "title": "Check Items",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Yangi Check Item qo`shish",
+        "createOrEditLabel": "Check Itemni tahrirlash",
+        "notFound": "No Check Items found"
+      },
+      "created": "Check Item {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Check Item saqlandi",
+      "deleted": "{{ param }}- Check Item o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Check Itemni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Check Item"
+      },
+      "id": "ID",
+      "checkItemId": "Check Item Id",
+      "name": "Name",
+      "state": "State",
+      "data": "Data",
+      "checkList": "Check List"
+    }
+  }
+}

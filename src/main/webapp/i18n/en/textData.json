@@ -1,0 +1,26 @@
+{
+  "trilloIntegrationApp": {
+    "textData": {
+      "home": {
+        "title": "Text Data",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Text Data",
+        "createOrEditLabel": "Create or edit a Text Data",
+        "notFound": "No Text Data found"
+      },
+      "created": "A new Text Data is created with identifier {{ param }}",
+      "updated": "A Text Data is updated with identifier {{ param }}",
+      "deleted": "A Text Data is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Text Data {{ id }}?"
+      },
+      "detail": {
+        "title": "Text Data"
+      },
+      "id": "ID",
+      "textDataId": "Text Data Id",
+      "emoji": "Emoji",
+      "checkItem": "Check Item"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "annotations": {
+    "changelogDate": "20250820192555"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "emojiId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Emoji",
+  "relationships": [
+    {
+      "otherEntityName": "textData",
+      "otherEntityRelationshipName": "emoji",
+      "relationshipName": "textData",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

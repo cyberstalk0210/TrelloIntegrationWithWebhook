@@ -27,13 +27,14 @@
       "CheckList",
       "CheckItem",
       "TextData",
-      "Emoji"
+      "Emoji",
+      "Member"
     ],
     "feignClient": null,
     "jhipsterVersion": "8.11.0",
     "jwtSecretKey": "YjU3MzYyMTRlNTNhMGQ3M2QzOGYzYjIzNDlkZTBjNmM1ZjVhMjgwYTgwZmEyMTIzYzQ1ZjhiNTQxNjY4NDdmNmZjMzdlYmE0MWExYTAxOTQzYzliOTFiOGM2YzExODk1NGZkZGEyODhlNmZmZWZmMmQ2MDljYTA1OTg2NDY3Yzc=",
     "languages": ["en", "ru", "uz-Latn-uz"],
-    "lastLiquibaseTimestamp": 1755717955000,
+    "lastLiquibaseTimestamp": 1755776124000,
     "microfrontend": null,
     "microfrontends": [],
     "nativeLanguage": "en",

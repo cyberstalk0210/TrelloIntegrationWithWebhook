@@ -1,0 +1,26 @@
+{
+  "trilloIntegrationApp": {
+    "member": {
+      "home": {
+        "title": "Members",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Yangi Member qo`shish",
+        "createOrEditLabel": "Memberni tahrirlash",
+        "notFound": "No Members found"
+      },
+      "created": "Member {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Member saqlandi",
+      "deleted": "{{ param }}- Member o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Memberni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Member"
+      },
+      "id": "ID",
+      "trelloId": "Trello Id",
+      "name": "Name",
+      "cards": "Cards"
+    }
+  }
+}

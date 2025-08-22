@@ -52,7 +52,7 @@ public class TrelloService {
         this.restTemplate = restTemplate;
         this.key = key;
         this.token = token;
-        this.callbackUrl = "https://ab3f6ac4cbde.ngrok-free.app/api/trello/webhook";
+        this.callbackUrl = "https://d01aac17a643.ngrok-free.app/api/trello/webhook";
         this.boardListRepository = boardListRepository;
         this.cardRepository = cardRepository;
         this.boardRepository = boardRepository;

@@ -1,0 +1,28 @@
+{
+  "trilloIntegrationApp": {
+    "checkItem": {
+      "home": {
+        "title": "Check Items",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Check Item",
+        "createOrEditLabel": "Создать или отредактировать Check Item",
+        "notFound": "Check Items не найдено"
+      },
+      "created": "Новый Check Item создан с идентификатором {{ param }}",
+      "updated": "Check Item обновлен с идентификатором {{ param }}",
+      "deleted": "Check Item удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Check Item {{ id }}?"
+      },
+      "detail": {
+        "title": "Check Item"
+      },
+      "id": "ID",
+      "checkItemId": "Check Item Id",
+      "name": "Name",
+      "state": "State",
+      "data": "Data",
+      "checkList": "Check List"
+    }
+  }
+}

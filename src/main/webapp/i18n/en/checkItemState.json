@@ -1,0 +1,8 @@
+{
+  "trilloIntegrationApp": {
+    "CheckItemState": {
+      "null": "",
+      "INCOMPLETE": "INCOMPLETE"
+    }
+  }
+}

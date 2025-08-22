@@ -1,0 +1,26 @@
+{
+  "trilloIntegrationApp": {
+    "emoji": {
+      "home": {
+        "title": "Emojis",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Yangi Emoji qo`shish",
+        "createOrEditLabel": "Emojini tahrirlash",
+        "notFound": "No Emojis found"
+      },
+      "created": "Emoji {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Emoji saqlandi",
+      "deleted": "{{ param }}- Emoji o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Emojini o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Emoji"
+      },
+      "id": "ID",
+      "emojiId": "Emoji Id",
+      "name": "Name",
+      "textData": "Text Data"
+    }
+  }
+}

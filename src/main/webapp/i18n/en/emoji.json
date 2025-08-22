@@ -1,0 +1,26 @@
+{
+  "trilloIntegrationApp": {
+    "emoji": {
+      "home": {
+        "title": "Emojis",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Emoji",
+        "createOrEditLabel": "Create or edit a Emoji",
+        "notFound": "No Emojis found"
+      },
+      "created": "A new Emoji is created with identifier {{ param }}",
+      "updated": "A Emoji is updated with identifier {{ param }}",
+      "deleted": "A Emoji is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Emoji {{ id }}?"
+      },
+      "detail": {
+        "title": "Emoji"
+      },
+      "id": "ID",
+      "emojiId": "Emoji Id",
+      "name": "Name",
+      "textData": "Text Data"
+    }
+  }
+}

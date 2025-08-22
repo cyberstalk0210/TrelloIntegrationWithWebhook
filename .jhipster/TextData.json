@@ -1,0 +1,30 @@
+{
+  "annotations": {
+    "changelogDate": "20250820192554"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "textDataId",
+      "fieldType": "String"
+    }
+  ],
+  "name": "TextData",
+  "relationships": [
+    {
+      "otherEntityName": "emoji",
+      "otherEntityRelationshipName": "textData",
+      "relationshipName": "emoji",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "checkItem",
+      "otherEntityRelationshipName": "data",
+      "relationshipName": "checkItem",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

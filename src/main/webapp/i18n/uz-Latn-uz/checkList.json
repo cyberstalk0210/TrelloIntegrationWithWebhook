@@ -1,0 +1,26 @@
+{
+  "trilloIntegrationApp": {
+    "checkList": {
+      "home": {
+        "title": "Check Lists",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Yangi Check List qo`shish",
+        "createOrEditLabel": "Check Listni tahrirlash",
+        "notFound": "No Check Lists found"
+      },
+      "created": "Check List {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Check List saqlandi",
+      "deleted": "{{ param }}- Check List o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Check Listni o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Check List"
+      },
+      "id": "ID",
+      "checkListId": "Check List Id",
+      "name": "Name",
+      "checkItem": "Check Item"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "annotations": {
+    "changelogDate": "20250820192552"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "checkListId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "CheckList",
+  "relationships": [
+    {
+      "otherEntityName": "checkItem",
+      "otherEntityRelationshipName": "checkList",
+      "relationshipName": "checkItem",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

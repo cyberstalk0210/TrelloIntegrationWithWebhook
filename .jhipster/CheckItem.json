@@ -1,0 +1,39 @@
+{
+  "annotations": {
+    "changelogDate": "20250820192553"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "checkItemId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "state",
+      "fieldType": "CheckItemState",
+      "fieldValues": "INCOMPLETE"
+    }
+  ],
+  "name": "CheckItem",
+  "relationships": [
+    {
+      "otherEntityName": "textData",
+      "otherEntityRelationshipName": "checkItem",
+      "relationshipName": "data",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "checkList",
+      "otherEntityRelationshipName": "checkItem",
+      "relationshipName": "checkList",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

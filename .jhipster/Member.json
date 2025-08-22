@@ -1,0 +1,28 @@
+{
+  "annotations": {
+    "changelogDate": "20250821113524"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "trelloId",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Member",
+  "relationships": [
+    {
+      "otherEntityName": "card",
+      "otherEntityRelationshipName": "members",
+      "relationshipName": "cards",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

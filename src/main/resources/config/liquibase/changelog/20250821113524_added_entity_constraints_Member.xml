@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+  <!-- card_members join table -->
+  <changeSet id="20250822-1" author="jhipster">
+    <createTable tableName="card_members">
+      <column name="card_id" type="bigint">
+        <constraints nullable="false"/>
+      </column>
+      <column name="member_id" type="bigint">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+
+    <addPrimaryKey
+      tableName="card_members"
+      columnNames="card_id, member_id"
+      constraintName="pk_card_members"/>
+
+    <addForeignKeyConstraint
+      baseTableName="card_members"
+      baseColumnNames="card_id"
+      constraintName="fk_card_members__card_id"
+      referencedTableName="card"
+      referencedColumnNames="id"/>
+
+    <addForeignKeyConstraint
+      baseTableName="card_members"
+      baseColumnNames="member_id"
+      constraintName="fk_card_members__member_id"
+      referencedTableName="members"
+      referencedColumnNames="id"/>
+  </changeSet>
+</databaseChangeLog>

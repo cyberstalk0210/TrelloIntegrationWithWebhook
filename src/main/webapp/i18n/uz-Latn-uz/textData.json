@@ -1,0 +1,26 @@
+{
+  "trilloIntegrationApp": {
+    "textData": {
+      "home": {
+        "title": "Text Data",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Yangi Text Data qo`shish",
+        "createOrEditLabel": "Text Datani tahrirlash",
+        "notFound": "No Text Data found"
+      },
+      "created": "Text Data {{ param }} bilan qo`shildi",
+      "updated": "{{ param }}- Text Data saqlandi",
+      "deleted": "{{ param }}- Text Data o`chirildi",
+      "delete": {
+        "question": "{{ id }}- Text Datani o`chirmoqchimisiz? "
+      },
+      "detail": {
+        "title": "Text Data"
+      },
+      "id": "ID",
+      "textDataId": "Text Data Id",
+      "emoji": "Emoji",
+      "checkItem": "Check Item"
+    }
+  }
+}

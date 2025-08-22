@@ -79,6 +79,18 @@ public class Card implements Serializable {
     @JsonIgnoreProperties(value = { "cards", "board" }, allowSetters = true)
     private BoardList boardList;
 
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinTable(name = "card_members", joinColumns = @JoinColumn(name = "card_id"), inverseJoinColumns = @JoinColumn(name = "member_id"))
+    private Set<Member> members = new HashSet<>();
+
+    public Set<Member> getMembers() {
+        return members;
+    }
+
+    public void setMembers(Set<Member> members) {
+        this.members = members;
+    }
+
     // jhipster-needle-entity-add-field - JHipster will add fields here
 
     public Instant getStartDate() {
@@ -322,6 +334,18 @@ public class Card implements Serializable {
 
     public Card boardList(BoardList boardList) {
         this.setBoardList(boardList);
+        return this;
+    }
+
+    public Card addMember(Member member) {
+        this.members.add(member);
+        member.getCards().add(this);
+        return this;
+    }
+
+    public Card removeMember(Member member) {
+        this.members.remove(member);
+        member.getCards().remove(this);
         return this;
     }
 

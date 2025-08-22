@@ -1,0 +1,26 @@
+{
+  "trilloIntegrationApp": {
+    "member": {
+      "home": {
+        "title": "Members",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Member",
+        "createOrEditLabel": "Создать или отредактировать Member",
+        "notFound": "Members не найдено"
+      },
+      "created": "Новый Member создан с идентификатором {{ param }}",
+      "updated": "Member обновлен с идентификатором {{ param }}",
+      "deleted": "Member удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Member {{ id }}?"
+      },
+      "detail": {
+        "title": "Member"
+      },
+      "id": "ID",
+      "trelloId": "Trello Id",
+      "name": "Name",
+      "cards": "Cards"
+    }
+  }
+}
